@@ -1,0 +1,28 @@
+{
+   "background": {
+      "scripts": ["core/app.background-build.min.js"]
+   },
+   "content_scripts": [ {
+      "css": [ "css/app.content-build.min.css" ],
+      "js": [ "core/app.content-build.min.js" ],
+      "matches": [ "*://vk.com/*", "*://new.vk.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "ru",
+   "description": "__MSG_desc__",
+   "icons": {
+      "128": "img/icon.png",
+      "16": "img/icon.png",
+      "32": "img/icon.png",
+      "48": "img/icon.png"
+   },
+   "manifest_version": 2,
+   "minimum_chrome_version": "20",
+   "name": "__MSG_name__",
+   "permissions": [ "downloads", "storage", "*://*.vkuseraudio.net/*", "*://*.userapi.com/*", "cookies", "webRequest", "webRequestBlocking", "http://*/*", "https://*/*" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.3.03.1",
+   "web_accessible_resources": [ "img/i-icons.gif" ],
+   "author": "Plugtopus Agency",
+   "homepage_url": "https://plugtopus.agency"
+}
